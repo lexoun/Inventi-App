@@ -1,17 +1,23 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
-import Title from './components/Title';
-import Content from './components/Content';
+import TransactionList from './Components/TransactionList';
+import Header from './Components/Header';
+import Filtration from './Components/Filtration';
+import NewTransactionButton from './Components/NewTransactionButton';
+import Pagination from './Components/Pagination';
+import Navigation from './Components/Navigation';
 
 const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <Title name={"Whatever"} />
-        <Content />
-      </header>
+    <div id="container">
+      <Header />
+      <Filtration />
+      <TransactionList />
+      <Pagination />
+      <div class="fixed">
+        <NewTransactionButton />
+        <Navigation />
+      </div>
     </div>
   );
 }

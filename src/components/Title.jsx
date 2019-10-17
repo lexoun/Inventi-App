@@ -1,5 +1,9 @@
 import React from 'react'
 
-const Title = ({ name }) => <p>My name is {name}</p>;
+const Title = ({ name }) => {
+    return (
+        <p>Welcome {name}</p>
+    )
+}
 
 export default Title;
